@@ -1,0 +1,527 @@
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.panel {
+  width: 1104px;
+  height: auto;
+  padding-bottom: 10px;
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+.leftSide {
+  display: flex;
+  flex-direction: column;
+}
+.frameVersionWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.sizeWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.calculationWrapper {
+  display: flex;
+  align-items: center;
+}
+.callToActionWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.leftSide > input {
+  width: 570px;
+  height: 34px;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid #d6dade;
+  padding: 5px;
+}
+.heratFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heratFrame > button {
+  border-radius: 30px;
+  border: 2px solid white;
+  background-color: #143333;
+  padding: 2px 5px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  width: 80px;
+}
+
+.classicFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.classicFrame > button {
+  border-radius: 30px;
+  border: 2px solid white;
+  background-color: #4fa746;
+  padding: 2px 5px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  width: 80px;
+}
+.large {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.large > button {
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  width: 150px;
+  padding: 5px 7px;
+}
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.checkboxWrapper > h5 {
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
+.calculationWrapper > label {
+  font-size: 60px;
+  font-weight: 700;
+  color: #57b755;
+  margin-left: 10px;
+}
+.calculationWrapper > button {
+  width: 44px;
+  height: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.calculationWrapper > input {
+  width: 60px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+.calculationWrapper > button:hover {
+  color: white;
+  background-color: #6c757d;
+  border: 1px solid white;
+}
+.callToActionWrapper > button {
+  width: 270px;
+  height: 45px;
+  outline: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.spotifyFrameWrapper {
+  background-color: #cfcbc8;
+  height: 680px;
+  width: 425px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.frameTitle {
+  width: 371px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.titleInfo {
+  display: flex;
+  flex-direction: column;
+}
+.titleInfo > label {
+  font-weight: 700;
+}
+.spotifyFrameWrapper > img {
+  padding-top: 10px;
+}
+.navigate {
+  display: flex;
+  margin-bottom: 20px;
+}
+.spotifySong {
+  border-bottom: 3px solid #878787;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.spotifySong > label {
+  font-size: 30px;
+  font-weight: 600;
+  color: #878787;
+  cursor: pointer;
+}
+.ownSong {
+  border-bottom: 3px solid #878787;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.ownSong > label {
+  font-size: 30px;
+  font-weight: 600;
+  color: #878787;
+  cursor: pointer;
+}
+.activeTab {
+  border-bottom: 3px solid #57b755;
+}
+.activeTab > label {
+  color: #57b755;
+}
+.listGroup {
+  height: 320px;
+  width: 570px;
+  overflow-y: scroll;
+  display: none;
+}
+
+.resultWrapper {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  border-bottom: 1px solid gray;
+  background-color: white;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px;
+}
+.info > h4,
+p {
+  display: inline-block;
+}
+
+.resultWrapper:hover {
+  background-color: #e8e8e8;
+  cursor: pointer;
+}
+.display {
+  display: block;
+}
+.heartClip {
+  width: 372px;
+  height: 372px;
+  position: absolute;
+  z-index: 9;
+  top: 78px;
+}
+.hidden {
+  display: none;
+}
+.addToCart {
+  width: 100px;
+  height: 90px;
+  /* background-color: #4fa746; */
+  background: url('/add-to-cart-removebg-preview.png') no-repeat center center/cover ;
+  color: rgb(76, 231, 45);
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  left: 18px;
+  z-index: 1;
+}
+/* #add{
+  background: url('/heart.png') no-repeat center center/cover ;
+  width: 100px;
+  height: 100px;
+} */
+.sideNav {
+  height: auto;
+  width: 100%;
+  background-color: #e8e8e8;
+  position: absolute;
+  z-index: 10;
+  left: 0px;
+  top: 0px;
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+.section-header {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.about-band-image {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+}
+
+.btn-header {
+  margin: 0.5em 15% 2em 15%;
+  color: white;
+  border: 2px solid #2d9cdb;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-play {
+  display: block;
+  margin: 0 auto;
+  color: #2d9cdb;
+  font-size: 4em;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #56ccf2;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #2d9cdb;
+}
+
+.tour-row {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+  border: none;
+}
+
+.tour-item {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.tour-date {
+  color: #555;
+  width: 11%;
+  font-weight: bold;
+}
+
+.tour-city {
+  width: 24%;
+}
+
+.tour-arena {
+  width: 42%;
+}
+
+.tour-btn {
+  max-width: 19%;
+}
+
+.shop-item {
+  margin: 30px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.shop-item-image {
+  height: 250px;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
+
+/* Buttpm styling */
+#addtocartbutton {
+  border: 1px solid #4FA746;
+  color:#4FA746; 
+}
+#addtocartbutton:hover{
+  background-color: #dfe6de;
+  cursor: pointer;
+        
+}
+
+#Payement_buttonwithcart{
+  background-color: #4FA746;color:white;border:none;
+}
+
+#Payement_buttonwithcart{
+  background-color: #3e9734;
+  cursor: pointer;
+}

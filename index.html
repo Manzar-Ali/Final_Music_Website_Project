@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    
+</head>
+
+<body>
+    <div class="sideNav  hidden" id="sideDrawer">
+        <button onclick="closeDrawer()">X</button>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>    
+    
+    
+    </div>
+<div class="addToCart" onclick="addItem()">
+    <span id="add" ></span>
+</div>
+
+    <div class="wrapper">
+        <div class="panel">
+            <div class="leftSide">
+                <div class="navigate">
+                    <div class="spotifySong activeTab"><label>Spotify Song</label></div>
+                    <div class="ownSong"> <label>Your Own Image</label></div>
+                    
+                   
+                </div>
+                <input type="text" id="search" placeholder="Song , Artist , Album">
+                <input type="text" placeholder="Song Title" id="title" >
+                <input type="text" placeholder="Artist Name" id="artist">
+                <div class="listGroup" id="results">
+
+                </div>
+                <h2>Select Version</h2>
+                <div class="frameVersionWrapper">
+                    <div class="classicFrame">
+                        <button>Classic</button>   
+                        <img src="./vertical.png" alt="" onclick="frameChange()" width="188" height="188">
+                    </div>
+                    <div class="heratFrame" >
+                        <button>Heart</button>
+                        <img src="./heart.png" alt="" onclick="frameChange(this.id)" width="190" height="188" id="heart">
+                    </div>
+                    
+                </div>
+                <h2>Select Size</h2>
+                <div class="sizeWrapper">
+                    <div class="large">
+                        <img src="./vertical.png" alt="" width="188" height="251">
+                        <button style="background-color: #143333; color: white;" id="large" onclick="sizeChange(this.id)">30x40 cm</button>
+                    </div>
+                    <div class="large">
+                        <img src="./vertical.png" alt="" width="150" height="212">
+                        <button id="medium" onclick="sizeChange(this.id)">21x29.7 cm</button>
+                    </div>
+                    <div class="large">
+                        <img src="./vertical.png" alt="" width="94" height="141">
+                        <button id="small" onclick="sizeChange(this.id)">10x15 cm</button>
+                    </div>
+                </div>
+                <div class="checkboxWrapper">
+                    <input type="checkbox" id="frameCost" onclick="addFrame()">
+                    <h5 id="frame">Add frame (+ 7.99 €)</h5>
+                </div>
+                <div class="calculationWrapper">
+                    <button onclick="decrement()">-</button>
+                    <input type="text" id="count">
+                    <button onclick="increment()">+</button>
+                    <Label id="cost">€ 39.99</Label>
+                </div>
+                <div class="callToActionWrapper">
+                    <button id='addtocartbutton' style="border: 1px solid #4FA746;color:#4FA746 " onclick="addToCart()">Add to Cart</button>
+                    <button id='Payement_buttonwithcart' style="background-color: #4FA746;color:white;border:none">Clever! Go to Payment</button>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="spotifyFrameWrapper" id="song-detail">
+                    <img src="./transparent.png" class="heartClip hidden" id="heartFrame" alt="heavy">
+                    <img src="./spotify logo.png" alt="Frame" width="371" height="371" id="heroImage">
+                    <img src="./img2.png" alt="spotifyQr" width="204" height="51">
+                    <div class="frameTitle">
+                        <div class="titleInfo">
+                            <label id="frameSongTitle">Song Title</label>
+                        <label id="frameArtistTitle" style="font-weight: 500;">Artist Name</label>
+                        </div>
+                        <img src="./img4.png" alt="" width="17" height="17">
+                        
+                    </div>
+
+                   
+                    <img src="./img3.png" alt="controlers" width="371" height="107">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+
+</html>
