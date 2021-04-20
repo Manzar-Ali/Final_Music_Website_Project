@@ -241,7 +241,7 @@ p {
   width: 100px;
   height: 90px;
   /* background-color: #4fa746; */
-  background: url('/add-to-cart-removebg-preview.png') no-repeat center center/cover ;
+  background: url('/images/add-to-cart-removebg-preview.png') no-repeat center center/cover ;
   color: rgb(76, 231, 45);
   cursor: pointer;
   position: fixed;
